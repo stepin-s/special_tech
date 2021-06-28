@@ -1,0 +1,135 @@
+html {
+    font-family: Roboto;
+    font-style: normal;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    display: flex;
+}
+
+@media(max-width:1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media(max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+}
+@media(max-width:767px){
+    .container{
+        max-width: none;
+    }
+}
+
+.wrapper{
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .container{
+    flex-direction: column;
+}
+
+
+.header__logo img{
+    max-width: 113px;
+    max-height: 113px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+
+.social__item{
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp a, .call a{
+    margin-right: 10px;
+}
+
+.social__item span{
+    margin-right: 13px;
+}
+
+.call span{
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+.btn__item{
+    width: 182px;
+    height: 40px;
+    background: #FFB802;
+    border-radius: 35px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.divider{
+    border-bottom: 5px solid #FFB802;
+}
+
+main h1{
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+}
+
+.adv{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.adv__item{
+    margin-right: 20px;
+    text-align: -webkit-center;
+}
+
+.adv__item img{
+    margin-bottom: 5px;
+}
+
+
+.order__background{
+    height: 630px;
+    position: relative;
+    background: #FFB802;
+    margin-bottom: 65px;
+    overflow: hidden;
+}
+
+.back1{
+    position: absolute;
+    width: 358px;
+    height: 94px;
+    left: 52px;
+    top: 548px;
+}
+
+.back2{
+    position: absolute;
+    width: 480px;
+    height: 369px;
+    left: 928px;
+    top: 276px;
+}
