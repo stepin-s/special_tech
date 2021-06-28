@@ -6,7 +6,7 @@ html {
 }
 
 .container{
-    max-width: 1440px;
+    max-width: 940px;
     margin: 0px auto;
     padding: 0px 15px;
     display: flex;
@@ -45,6 +45,9 @@ main .container{
 }
 
 
+.header__logo{
+    margin-right: 30px;
+}
 .header__logo img{
     max-width: 113px;
     max-height: 113px;
@@ -81,6 +84,7 @@ main .container{
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
+    border: none;
 }
 
 .divider{
