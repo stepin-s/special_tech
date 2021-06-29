@@ -39,6 +39,82 @@
                 </ul>
             </div>
             <div class="order__background">
+                <div class="order__wrapper">
+                    <div class="toggle">
+                      <input type="checkbox" class="check">
+                      <b class="b switch"></b>
+                      <b class="b track"><span class="left">Спецтехника</span><span class="right">Материалы</span></b>
+                    </div>
+                    <form action="" class="order">
+                       <div class="row">
+                          <div class="col-25">
+                            <label for="fname">Спецтехника</label>
+                          </div>
+                          <div class="col-75">
+                            <select id="tech" name="tech">
+                              <option value="" disabled selected>Выберите</option>
+                              <option value="kamaz">Камаз</option>
+                              <option value="traktor">Трактор</option>
+                              <option value="samosval">Самосвал</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="lname">Дата и время</label>
+                          </div>
+                          <div class="col-75">
+                                    <select id="day" name="country">
+                              <option value="australia">27 июня</option>
+                              <option value="canada">28 июня</option>
+                              <option value="usa">29 июня</option>
+                            </select>
+                                    <select id="hour" name="country">
+                              <option value="australia">16</option>
+                              <option value="canada">17</option>
+                              <option value="usa">18</option>
+                            </select><span> &ndash; </span>
+                                    <select id="minute" name="country">
+                              <option value="australia">00</option>
+                              <option value="canada">20</option>
+                              <option value="usa">40</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="country">Телефон</label>
+                          </div>
+                          <div class="col-75">
+                              <input type="text" name="order__phone" placeholder="+7" >
+                          </div>
+                        </div>
+                          <div class="row">
+                          <div class="col-25">
+                            <label for="country">Имя и фамилия</label>
+                          </div>
+                          <div class="col-75">
+                              <input type="text" name="order__fio" placeholder="" >
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="subadressject">Адрес</label>
+                          </div>
+                          <div class="col-75">
+                            <textarea id="adress" name="adress" placeholder="Адрес, доп. пожелания"></textarea>
+                          </div>
+                        </div>
+                      <div class="mid__row">
+                        <label>
+                      <input class="accept" type="checkbox" name="accept" value="yes">  Соглашаюсь на обработку персональных данных
+                    </label>
+                        <div class="row">
+                          <input type="submit" value="Заказать">
+                        </div>
+                      </div>
+                    </form>
+                      </div>
                 <img src="images/background_1.png" class="back1" alt="">
                 <img src="images/background_2.png" class="back2" alt="">
             </div>
