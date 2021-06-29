@@ -21,7 +21,7 @@
                     <li class="social__item viber"><a href="/"><img src="images/viber_1.svg" alt=""></a><span>Viber</span></li>
                     <li class="social__item telegramm"><a href="/"><img src="images/telegram.svg" alt=""></a><span>Telegram</span></li>
                     <li class="social__item call"><a href="tel:32-20-50"><img src="images/call.svg" alt=""></a><span>32-20-50</span></li>
-                    <button type="button" class="btn__item" data-toggle="modal" data-target="#modal-call__me">Перезвоните мне</button>
+                    <a href=""><button type="button" class="btn__item" data-toggle="modal" data-target="#modal-call__me">Перезвоните мне</button></a>
                 </ul>
             </div>
             <div class="divider"></div>
@@ -64,20 +64,20 @@
                             <label for="lname">Дата и время</label>
                           </div>
                           <div class="col-75">
-                                    <select id="day" name="country">
-                              <option value="australia">27 июня</option>
-                              <option value="canada">28 июня</option>
-                              <option value="usa">29 июня</option>
+                                    <select id="day" name="day">
+                              <option value="">27 июня</option>
+                              <option value="">28 июня</option>
+                              <option value="">29 июня</option>
                             </select>
-                                    <select id="hour" name="country">
-                              <option value="australia">16</option>
-                              <option value="canada">17</option>
-                              <option value="usa">18</option>
+                                    <select id="hour" name="hour">
+                              <option value="">16</option>
+                              <option value="">17</option>
+                              <option value="">18</option>
                             </select><span> &ndash; </span>
-                                    <select id="minute" name="country">
-                              <option value="australia">00</option>
-                              <option value="canada">20</option>
-                              <option value="usa">40</option>
+                                    <select id="minute" name="minute">
+                              <option value="">00</option>
+                              <option value="">20</option>
+                              <option value="">40</option>
                             </select>
                           </div>
                         </div>
@@ -106,11 +106,11 @@
                           </div>
                         </div>
                       <div class="mid__row">
-                        <label>
-                      <input class="accept" type="checkbox" name="accept" value="yes">  Соглашаюсь на обработку персональных данных
-                    </label>
+                       
+                    <input type="checkbox" id="accept" name="accept" value="yes" checked>
+                    <label for="accept"><span></span>Соглашаюсь на обработку персональных данных</label>
                         <div class="row">
-                          <input type="submit" value="Заказать">
+                          <input type="submit" value="Заказать" class="order__submit">
                         </div>
                       </div>
                     </form>
@@ -118,9 +118,39 @@
                 <img src="images/background_1.png" class="back1" alt="">
                 <img src="images/background_2.png" class="back2" alt="">
             </div>
+            <div class="app">
+              <div class="container flex">
+              <div class="mockup">
+                <img src="images/mockup_app.png" alt="">
+              </div>
+              <div class="download">
+                  <h2>Заказывайте спецтехнику <br> и материалы через наше приложение</h2>
+                  <h3>Удобное приложение всегда у вас под рукой</h3>
+                  <div class="apps">
+                    <img src="images/appstore.png" alt="">
+                    <img src="images/googleplay.png" alt="">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="sotr">
+            <div class="container flex">
+            <div class="sotr__accent">
+              <h2>Приглашаем к сотрудничеству <br> водителей спецтехники</h2>
+              <h3>Предлагаем выгодные условия для  сотрудничества</h3>
+              <a href="job.html"><button type="button" class="btn__item" data-toggle="" data-target="">Оставить заявку</button></a>
+          </div>
+          <div class="car">
+            <img src="images/car.png" alt="">
+          </div>
+        </div>
+          </div>
         </main>
         <footer>
-    
+          <div class="container">
+            <p>© 2021 Единая служба заказа спецтехника</p>
+            <a href="">Устроиться на работу</a>
+          </div>
         </footer>
     </div>
 </body>
