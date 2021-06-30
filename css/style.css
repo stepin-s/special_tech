@@ -12,7 +12,13 @@ html {
     display: flex;
 }
 
-@media(max-width:1200px){
+@media(max-width:992px) {
+  .container{
+    padding: 0px 10px;
+  }
+}
+
+/* @media(max-width:1200px){
     .container{
         max-width: 970px;
     }
@@ -26,7 +32,7 @@ html {
     .container{
         max-width: none;
     }
-}
+} */
 
 .wrapper{
     display: flex;
@@ -52,12 +58,24 @@ main .container{
     max-width: 113px;
     max-height: 113px;
 }
-
+@media(max-width: 710px){
+  .header__logo img{
+    max-width: 65px;
+    max-height: 65px;
+  }
+}
 .social{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
-
+@media(max-width:955px){
+  .social{
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
 .social__item{
     display: flex;
     align-items: center;
@@ -70,6 +88,13 @@ main .container{
 .social__item span{
     margin-right: 13px;
 }
+@media(max-width: 955px){
+  .social__item span:not(.call span){
+    display: none;
+  }
+}
+
+
 
 .call span{
     font-size: 25px;
@@ -78,6 +103,17 @@ main .container{
 
 .call{
     margin-right: 50px;
+}
+@media(max-width:955px){
+  .call{
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+@media(max-width:767px){
+  .call a{
+    width: 27px;
+  }
 }
 
 .btn__item{
@@ -91,6 +127,13 @@ main .container{
     border: none;
     cursor: pointer;
 }
+@media(max-width:767px){
+  .btn__item{
+    width: 136px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
 
 .divider{
     border-bottom: 5px solid #FFB802;
@@ -102,13 +145,29 @@ main h1{
     text-align: center;
     margin: 20px 0px 50px 0px;
 }
+@media(max-width:767px){
+  main h1{
+    font-weight: 500;
+    font-size: 28px;  
+    line-height: 30px;
+    margin: 10px 0px 20px 0px;
+  }
+}
+
 
 .adv{
     display: flex;
     margin: 0 auto;
     margin-bottom: 50px;
 }
-
+@media(max-width:767px){
+  .adv{
+    flex-direction: column;
+    margin: unset;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+}
 .adv__item{
     margin-right: 20px;
     text-align: -webkit-center;
@@ -117,6 +176,15 @@ main h1{
 .adv__item img{
     margin-bottom: 5px;
 }
+
+@media(max-width:767px){.adv__span{
+  display: inline-block;
+  margin: 10px 0px 0px 10px;
+}}
+@media(max-width:767px){.adv__item img{
+  float:left;
+  width: 40px;
+}}
 
 
 .order__background{
@@ -137,13 +205,27 @@ main h1{
 
 .back2{
     position: absolute;
-    width: 480px;
+    width: 416px;
     height: 369px;
     right: 0px;
     top: 276px;
 }
+@media(max-width: 1460px){
+  .back2{
+    width: calc(416px - 10%);
+  }
+}
+@media(max-width: 1210px){
+  .back2{
+    width: calc(416px - 15%);
+  }
+}
 
-
+@media(max-width: 1120px){
+  .back1,.back2{
+    display: none;
+  }
+}
 
 
 
@@ -331,12 +413,13 @@ main h1{
     font-size: 20px;
     line-height: 20px;
     color: #808080;
+    background-color: #fff;
     padding: 10px;
   }
   
   #day{
     max-width: 140px;
-    margin-right: 29px;
+    margin-right: 28px;
   }
   
   #hour{
@@ -350,7 +433,10 @@ main h1{
   #hour, #minute{
     max-width: 95px;
   }
-  
+  .dash{
+    color:#616161;
+  }
+
   #adress{
     height:80px;
     font-size: 20px;
@@ -521,21 +607,35 @@ footer p{
     max-width: 300px;
     background: #FFB802;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
-
+.job__right h2{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 40px;
+}
+.job__right label{
+  padding: 0px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+.job__right label:not(:first-of-type){
+  margin-top: 18px;
+}
 .job__submit{
     width: 100%;
     height: 50px;
+    font-size: 18px;
 }
 
-.accept__label{
-    font-size: 16px;
-    line-height: 8px;
-    margin-bottom: 10px;
+.job__right .accept__label{
+    margin-bottom: 20px;
 }
 
-p{
+.job__left p{
     font-size: 20px;
     line-height: 25px;
 }
+
