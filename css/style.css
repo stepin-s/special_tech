@@ -177,15 +177,22 @@ main h1{
     margin-bottom: 5px;
 }
 
-@media(max-width:767px){.adv__span{
+/* @media(max-width:767px){.adv__span{
   display: inline-block;
   margin: 10px 0px 0px 10px;
-}}
+}} */
 @media(max-width:767px){.adv__item img{
   float:left;
   width: 40px;
+  margin-bottom:unset;
+  margin-right: 10px;
 }}
-
+@media(max-width:767px){.adv__item{
+    margin-bottom:10px;
+    text-align: -webkit-left;
+    display: flex;
+    align-items: center;
+  }}
 
 .order__background{
     height: 630px;
@@ -194,7 +201,10 @@ main h1{
     margin-bottom: 65px;
     overflow: hidden;
 }
-
+@media(max-width:767px){.order__background{
+    margin-bottom: 30px;
+    height: 640px;
+}}
 .back1{
     position: absolute;
     width: 358px;
@@ -261,7 +271,7 @@ main h1{
   
   .toggle {
     position: absolute;
-    top: 20px;
+    top: 40px;
     width: 465px;
     height: 60px;
     border-radius: 100px;
@@ -270,7 +280,11 @@ main h1{
     overflow: hidden;
     box-shadow: inset 0 0 2px 1px rgba(0,0,0,.05);
   }
-  
+  @media(max-width:767px){.toggle{
+    top: 27px;
+    width: 300px;
+    height: 40px;
+  }}
   .check {
     position: absolute;
     display: block;
@@ -292,7 +306,11 @@ main h1{
       transition-property: left, right;
       transition-delay: .05s, 0s;
     }
-  
+  @media(max-width:767px){.check:checked ~ .switch{
+       left: 146px;
+       right: 3px;
+  }}
+
   .switch {
     position: absolute;
     left: 7px;
@@ -307,7 +325,12 @@ main h1{
     transition-delay: 0s, .05s;
     background-color: #ddd;
   }
-  
+  @media(max-width:767px){.switch{
+    right: 146px;
+    left: 3px;
+    top: 3px;
+    bottom: 3px;
+  }}
   .track {
     position: absolute;
     left: 0;
@@ -327,31 +350,47 @@ main h1{
     line-height: 60px;
      z-index:2 ;
   }
-  
+  @media(max-width:767px){.track span{
+    font-size: 16px;
+    line-height: 37px;
+  }}
   .track .left{
     left: 40px;
   }
-  
+  @media(max-width:767px){.track .left{
+    left: 27px;
+  }}
   .track .right{
     right: 40px;
   }
-  
+  @media(max-width:767px){.track .right{
+    right: 35px;
+  }}
   
   
   input[type=text], select, textarea {
       width: 100%;
-      padding: 10px;
+      /* padding: 10px; */
       border: 1px solid #ccc;
       border-radius: 4px;
       resize: vertical;
   }
-  
+  textarea{
+    padding: 10px;
+  }
+
   label {
       padding: 15px 50px 15px 0;
       display: inline-block;
       font-size: 20px;
+      line-height: 20px;
+      font-weight: 400;
   }
-  
+  @media(max-width:767px){label{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 50px 12px 0;
+  }}
   input[type=submit] {
       background-color: #000;
       color: white;
@@ -393,11 +432,6 @@ main h1{
       }
   }
   
-  .order{
-  /*   max-width: 600px; */
-    width: 620px;
-  }
-  
   .order__wrapper{
     display: flex;
     flex-direction: column;
@@ -405,34 +439,53 @@ main h1{
   }
   
   .order{
-    padding-top: 100px;
+    padding-top: 125px;
+    width: 620px;
     max-width: 620px;
   }
-  
+  @media(max-width:767px){.order{
+      width:100%;
+      padding-top: 70px;
+  }}
   select, input{
     font-size: 20px;
     line-height: 20px;
     color: #808080;
     background-color: #fff;
-    padding: 10px;
+    padding: 6px;
   }
-  
+  @media(max-width:767px){select, input{
+    padding: 5px;
+    font-size: 16px;
+    line-height: 16px;
+  }}
   #day{
     max-width: 140px;
     margin-right: 28px;
   }
-  
+  @media(max-width:767px){#day{
+      max-width: 115px;
+      margin-right: 13px;
+  }}
   #hour{
     margin-right: 5px;
   }
   #minute{
     margin-left: 5px;
   }
-  
-  
+  @media(max-width:767px){#hour{
+      margin-right: 0px;
+  }}
+  @media(max-width:767px){#minute{
+    margin-left: 0px;
+}}
+
   #hour, #minute{
     max-width: 95px;
   }
+  @media(max-width:767px){#hour, #minute{
+      max-width: 75px;
+  }}
   .dash{
     color:#616161;
   }
@@ -443,19 +496,28 @@ main h1{
     line-height: 20px;
     color: #808080;
   }
-  
-  label{
-    font-size: 20px;
+  @media(max-width:767px){#adress{
+    font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
-  }
+    height:70px;
+  }}
+
   
   .accept{
     font-weight: 400;
     height: 16px;
     width: 16px;
   }
-  
+  .agree__label{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media(max-width:767px){.agree__label{
+    line-height: 10px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }}
+
   .order__submit{
     background: #000000;
     border-radius: 70px;
@@ -465,9 +527,19 @@ main h1{
     font-weight: 500;
     font-size: 28px;
     line-height: 40px;
-    
   }
+  @media(max-width:767px){.order__submit{
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px;
+  }}
+  @media(max-width:767px){.row__submit{
+    width: 100%;
+  }}
   
+  @media(min-width: 768px){.row{
+    margin-bottom: 5px;
+  }}
   .mid__row{
      flex-direction: column;
      display: flex;
@@ -486,6 +558,12 @@ main h1{
     text-align: center;
     vertical-align: middle;
 }
+@media(max-width:767px){input[type=checkbox] + label span{
+    width: 16px;
+    height: 16px;
+    font-size: 16pt;
+}}
+
  input[type=checkbox]:checked + label span::after {
     content: "\2713";
     font-size: 22px;
@@ -500,11 +578,20 @@ input[id=accept]{
 .mockup{
     margin-right: 100px;
 }
+@media(max-width:767px){.mockup{
+    margin-right: 0px;
+    margin-bottom: 25px;
+}}
+
 .mockup img{
     max-width: 300px;
     max-height: 320px;
 }
+@media(max-width:767px){.mockup img{
+    max-width: 164px;
+    max-height: 164px;
 
+}}
 .app{
     display: flex;
 }
@@ -514,13 +601,21 @@ main h2{
     line-height: 30px;
     margin-bottom: 20px;
 }
+@media(max-width:767px){main h2{
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}}
 main h3{
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 30px;
 }
-
+@media(max-width:767px){main h3{
+    font-size: 18px;
+    line-height: 20px;
+}}
 .apps{
     display: flex;
 }
@@ -529,6 +624,9 @@ main h3{
     max-width: 150px;
     max-height: 50px;
 }
+@media(max-width:767px){.apps img{
+    max-width: 145px;
+}}
 .app img:first-child{
     margin-right: 10px;
 }
@@ -538,18 +636,37 @@ main h3{
     align-items: center;
     margin-bottom: 40px;
 }
-
+@media(max-width:767px){.container.flex{
+    flex-direction: column;
+    margin-bottom: 0px;
+}}
 .download{
     padding-bottom: 60px;
 }
-.sotr__accent{
-    margin-right: 110px;
+@media(max-width:767px){.download{
+    padding-bottom: 40px;
+}}
+@media(min-width:768px){
+    .sotr__accent{
+        margin-right: 110px;
+    }
 }
 
 .car img{
     max-width: 415px;
     max-height: 300px;
 }
+@media(max-width:767px){.car{
+    display:none;
+}}
+.mobile__car{
+    display: none;
+}
+@media(max-width:767px){.mobile__car{
+    display: block;
+    width: 210px;
+    margin-bottom: 20px;
+}}
 
 footer{
     background: #000000;
@@ -559,16 +676,24 @@ footer{
     padding: 25px 0px;
     margin-top: 80px;
 }
+@media(max-width:767px){footer{
+    margin-top: 50px;
+}}
 
 footer .container{
     width: 100%;
 }
-
+@media(max-width:767px){footer .container{
+    flex-direction: column;
+}}
 
 footer p{
     margin-right: 50px;
 }
 
+@media(max-width:767px){footer p{
+    margin-bottom: 5px;
+}}
 
 
 
@@ -585,9 +710,13 @@ footer p{
 .job__inner{
     display: flex;
 }
-
-.job__left{
-    margin-right: 80px;
+@media(max-width:767px){.job__inner{
+    flex-direction: column;
+}}
+@media(min-width:768px){
+    .job__left{
+        margin-right: 80px;
+    }
 }
 
 .job__left p{
@@ -601,7 +730,9 @@ footer p{
 .job__left ul{
     padding-left: 40px;
 }
-
+@media(max-width:767px){.job__left ul{
+    margin-bottom: 25px;
+}}
 .job__right{
     max-height: 570px;
     max-width: 300px;
