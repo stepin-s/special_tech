@@ -380,7 +380,7 @@ main h1{
   }
 
   label {
-      padding: 15px 50px 15px 0;
+      padding: 10px 50px 15px 0;
       display: inline-block;
       font-size: 20px;
       line-height: 20px;
@@ -465,7 +465,7 @@ main h1{
   }
   @media(max-width:767px){#day{
       max-width: 115px;
-      margin-right: 13px;
+      margin-right: 12px;
   }}
   #hour{
     margin-right: 5px;
@@ -559,9 +559,9 @@ main h1{
     vertical-align: middle;
 }
 @media(max-width:767px){input[type=checkbox] + label span{
-    width: 16px;
-    height: 16px;
-    font-size: 16pt;
+    width: 18px;
+    height: 18px;
+    font-size: 24pt;
 }}
 
  input[type=checkbox]:checked + label span::after {
@@ -770,3 +770,14 @@ footer p{
     line-height: 25px;
 }
 
+
+.order{
+  display: block;
+}
+.order.order_2{
+  display: none;
+}
+
+/* .order_2{
+  display: none;
+} */

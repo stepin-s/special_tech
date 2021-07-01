@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -115,6 +116,75 @@
                         </div>
                       </div>
                     </form>
+                    <form action="" class="order order_2">
+                      <div class="row">
+                         <div class="col-25">
+                           <label for="fname">Материал</label>
+                         </div>
+                         <div class="col-75">
+                           <select id="mat" name="mat">
+                             <option value="" disabled selected>Выберите</option>
+                             <option value="pesok">Песок 10 тонн</option>
+                             <option value="kirpich">Кирпич 1 тонна</option>
+                             <option value="brus">Брус 200шт</option>
+                           </select>
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-25">
+                           <label for="lname">Доставка</label>
+                         </div>
+                         <div class="col-75">
+                                   <select id="day" name="day">
+                             <option value="">27 июня</option>
+                             <option value="">28 июня</option>
+                             <option value="">29 июня</option>
+                           </select>
+                                   <select id="hour" name="hour">
+                             <option value="">16</option>
+                             <option value="">17</option>
+                             <option value="">18</option>
+                           </select><span class="dash"> &ndash; </span>
+                                   <select id="minute" name="minute">
+                             <option value="">00</option>
+                             <option value="">20</option>
+                             <option value="">40</option>
+                           </select>
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-25">
+                           <label for="country">Телефон</label>
+                         </div>
+                         <div class="col-75">
+                             <input type="text" name="order__phone" placeholder="+7" >
+                         </div>
+                       </div>
+                         <div class="row">
+                         <div class="col-25">
+                           <label for="country">Имя и фамилия</label>
+                         </div>
+                         <div class="col-75">
+                             <input type="text" name="order__fio" placeholder="" >
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-25">
+                           <label for="subadressject">Адрес</label>
+                         </div>
+                         <div class="col-75">
+                           <textarea id="adress" name="adress" placeholder="Адрес, доп. пожелания"></textarea>
+                         </div>
+                       </div>
+                     <div class="mid__row">
+                      
+                   <input type="checkbox" id="accept" name="accept" value="yes" checked>
+                   <label class="agree__label" for="accept"><span></span>Соглашаюсь на обработку персональных данных</label>
+                       <div class="row row__submit">
+                         <input type="submit" value="Заказать" class="order__submit">
+                       </div>
+                     </div>
+                   </form>
                       </div>
                     </div>
                 <img src="images/background_1.png" class="back1" alt="">
@@ -154,7 +224,7 @@
         <footer>
           <div class="container">
             <p>© 2021 Единая служба заказа спецтехника</p>
-            <a href="">Устроиться на работу</a>
+            <a href="job.html">Устроиться на работу</a>
           </div>
         </footer>
     </div>
