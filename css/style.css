@@ -80,7 +80,9 @@ main .container{
     display: flex;
     align-items: center;
 }
-
+.social__item a:hover{
+  opacity: 0.8;
+}
 .whatsapp a, .call a{
     margin-right: 10px;
 }
@@ -133,6 +135,9 @@ main .container{
     height: 30px;
     font-size: 14px;
   }
+}
+.btn__item:hover{
+  opacity: 0.8;
 }
 
 .divider{
@@ -533,6 +538,9 @@ main h1{
     line-height: 30px;
     font-size: 18px;
   }}
+  .order__submit:hover{
+    background-color: rgba(19, 19, 19, 1);
+  }
   @media(max-width:767px){.row__submit{
     width: 100%;
   }}
@@ -622,7 +630,11 @@ main h3{
 
 .apps img{
     max-width: 150px;
-    max-height: 50px;
+    height: 40px;
+}
+.apps img:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }
 @media(max-width:767px){.apps img{
     max-width: 145px;
@@ -686,6 +698,9 @@ footer .container{
 @media(max-width:767px){footer .container{
     flex-direction: column;
 }}
+footer .container a:hover{
+  opacity: 0.8;
+}
 
 footer p{
     margin-right: 50px;
@@ -760,7 +775,9 @@ footer p{
     height: 50px;
     font-size: 18px;
 }
-
+.job__submit:hover{
+  background-color: rgba(19, 19, 19, 1);
+}
 .job__right .accept__label{
     margin-bottom: 20px;
 }
